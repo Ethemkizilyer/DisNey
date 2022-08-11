@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+}
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+.nav{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    /* background-color: red; */
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 3rem;
+    gap:4rem;
+    margin-top:1rem;
+}
+input{
+    display: none;
+}
+label{
+    width: 50px;
+    height: 50px;
+    border: 1px solid ;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    display: none;
+}
+label span{
+    width: 20px;
+    height: 3px;
+    background-color: #030C40;
+}
+.nav .logo{
+    width: 5rem;
+    height: 3rem;
+
+}
+.nav .logo a img{
+    width: 6rem;
+    height: 3rem;
+}
+.nav .menu1{
+    line-height: 5rem;
+    height: 5rem;
+    font-size: larger;
+    cursor: pointer;
+    position: relative;
+    transition: .5s all ease;
+    font-size:20px;
+}
+.nav .menu1 span{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(53, 50, 50);
+    position: absolute;
+    top:3.8rem;
+    left:2rem;
+    transform: rotate(45deg);
+    display:none;
+}
+.nav .menu1:hover span{
+    display:inline-block;
+}
+.nav .menu1 ul{
+display:none;
+position: absolute;
+width: 200px;
+background-color: rgb(53, 50, 50);
+top: 4.3rem;
+left: -2rem;
+}
+.nav .menu1 ul li{
+    color:#fff;
+    list-style-type: none;
+    margin-left: 1.5rem;
+    height: 4.5rem;
+    
+    
+}
+.nav .menu1:hover ul{
+    display: block;
+} 
+.nav .menu1 ul li:hover{
+    color:rgb(51, 177, 255);
+}
+.nav .menu1:hover ul{
+    display: block;
+}
+.nav .menu1:hover{
+    color:rgb(51, 177, 255);
+}
+.nav .menu2{
+    line-height: 5rem;
+    height: 5rem;
+    font-size: larger;
+    cursor: pointer;
+    position: relative;
+    transition: .5s all ease;
+    font-size:20px;
+}
+.nav .menu2 span{
+    width: 14px;
+    height: 14px;
+    background-color: rgb(53, 50, 50);
+    position: absolute;
+    top:3.8rem;
+    left:2rem;
+    transform: rotate(45deg);
+    display:none;
+}
+.nav .menu2:hover span{
+    display:inline-block;
+}
+.nav .menu2 ul{
+display:none;
+position: absolute;
+width: 350px;
+background-color: rgb(53, 50, 50);
+top: 4.3rem;
+left:-3rem
+}
+.nav .menu2 ul li{
+    color:#fff;
+    list-style-type: none;
+    margin-left: 1.5rem;
+    height: 3rem;
+    
+}
+.nav .menu2 ul:last-child{
+    padding-bottom:1rem;
+}
+.nav .menu2:hover ul{
+    display: block;
+} 
+.nav .menu2 ul li:hover{
+    color:rgb(51, 177, 255);
+}
+.nav .menu2:hover ul{
+    display: block;
+}
+.nav .menu2:hover{
+    color:rgb(51, 177, 255);
+}
+
+/* MAİN BÖLÜMÜ BAŞLADI */
+.main{
+    display: flex;
+    justify-content: center;
+}
+.main .main-left{
+    width: 50%;
+    height:800px;
+    /* border:1px solid red; */
+    background-image: url(images/disney1.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.main .main-right{
+    width: 50%;
+    height:800px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.main .main-right .right-image{
+    transition: 1s all ease;
+}
+.main .main-right .right-image:hover{
+    transform: scale(1.2);
+}
+
+.main .main-left{
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+.main .main-left p{
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.main .main-left button{
+    width: 16rem;
+    padding:1rem;
+    margin-top:2rem;
+    border-radius: 40px;
+    background-color: rgb(1, 107, 248);
+    border:none;
+    color: #fff;
+    font-size: 16px;
+}
+.main .main-left button:hover{
+    color:  rgb(1, 107, 248);
+    background-color: #fff;
+}
+.up {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 100%;
+    height: 700px;
+    margin: 30px 60px;
+    padding: 0 150px 0 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+}
+.up p{
+    font-size: 25px;
+    margin:15px 0;
+    font-weight: 400;
+}
+.up .bas {
+    display:flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.up .bas h1{
+    font-size: 36px;
+ 
+}
+.up ul{
+    margin-bottom: 0px;
+    list-style-type: circle;
+}
+.up ul li{
+    font-size:25px;
+    /* list-style-position: inside; */
+    transform: translate(50px);
+    font-size:20px;
+    font-weight: 400;
+    line-height: 40px;
+
+}
+.down{
+    width: 100%;
+    height: 266px;
+    background-color:#030C40 ;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.down p{
+    margin:20px 0;
+}
+.down span{
+    width: 100%;
+    margin: auto;
+    
+}
+.down a{
+    background: #016BF8;
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 35px;
+    
+}
+.down a:hover{
+    color: #016BF8;
+    background-color: #fff;
+}
+.down a span{
+    text-align: center;
+    line-height: 40px;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-bottom: 100px;
+}
+.middle div{
+    border-radius: 25px;
+    overflow:hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;    
+}
+.middle div img{
+    transition: .5s all ease-in;
+}
+.middle div span{
+color: #fff;
+position: absolute;
+bottom:-20px;
+transition: 1s all ease;
+}
+.middle div:hover span{
+    display: inline-block;
+    transform: translateY(-40px);
+}
+.middle div img:hover{
+    transform: scale(1.2);
+}
+.middle-icon{
+    width: 100%;
+    background: #020944;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    gap:100px;
+    flex-wrap: wrap;
+    padding: 40px;
+
+}
+
+.middle-icon .small-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size:23px;
+    color: #fff;
+    gap: 20px;
+    
+}
+.middle-icon .small-icon img{
+    width: 400px;
+    transition: .5s all ease;
+    
+}
+.middle-icon .small-icon img:hover{
+    transform: scale(1.05);
+}
+.middle-icon .small-icon span:last-child{
+    font-size:15px
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer .social{
+    font-size:25px;
+    margin:20px 0 ;
+}
+footer .social i:hover{
+    color: #016BF8;
+}
+footer .social{
+    word-spacing: 5px;
+}
+footer .disney-log img{
+    width: 100px;
+    opacity: .8;
+}
+footer .footer-inner ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .footer-inner ul li{
+    padding:15px;
+    list-style-type: none;
+    font-size: 15px;
+    opacity: 0.5;
+}
+footer .end{
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+footer .end span{
+    padding: 20px;
+    text-transform:capitalize;
+}
+
+
+@media (max-width: 768px){
+    label{
+        display:flex;
+        align-items: center;
+        margin-bottom:5px ;
+    }
+    .menu1{display:none}
+
+    .menu1 span{background-color: #fff;}
+
+    .menu2{display:none}
+
+    #check:checked ~.menu1 span{
+        display:none
+    }
+    #check:checked ~.menu2 span{
+        display:none
+    }
+    .logo{
+        position: relative;
+        top:25%;
+        left:25%;
+        transform:translate(-50%, -50%)
+    }
+    #check:checked ~.menu1{
+        display: block;
+        position: absolute;
+        left:0px;
+        top:67px;
+        background-color: #fff;
+        width: 100%;
+        text-indent: 5px;
+        border-bottom: 1px solid gray;
+    }
+    #check:checked ~.menu1 ul{
+        background-color: rgba(97, 97, 97, 0.73);
+        margin-top: 8px;
+        width: 120%;
+        text-indent: 25px;
+    }
+    
+
+    #check:checked ~ .menu2{
+        display: block;
+        position: absolute;
+        left:0px;
+        top:140px;
+        background-color: #fff;
+        width: 100%;
+        text-indent: 5px;
+        border-bottom: 1px solid gray;
+        border-top: 1px solid red;
+        transition: .2s all ease;
+
+    }
+    .menu1:hover +.menu2{
+
+        transform:translateY(150px)
+    }
+
+    #check:checked ~ .menu2 ul{
+        background-color: rgba(97, 97, 97, 0.73);
+        margin-top: 8px;
+        width: 120%;
+        text-indent: 25px;
+    }
+    .main{
+        flex-direction: column;
+        
+    }
+    .main .main-right{
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .main .main-left{
+        width: 100%;
+        
+    }
+
+    .up {
+        display: inline-block;
+    }
+    .up ul {
+        margin-bottom: 60px;
+    }
+    .up ul  li{
+        font-size:20px;
+    }
+    .middle-icon{
+        padding:40px 0;
+    }
+ 
+}
